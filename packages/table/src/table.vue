@@ -63,7 +63,6 @@
     </div>
     <div
       v-if="showSummary"
-      v-show="data && data.length > 0"
       v-mousewheel="handleHeaderFooterMousewheel"
       class="el-table__footer-wrapper"
       ref="footerWrapper">
@@ -125,7 +124,6 @@
       </div>
       <div
         v-if="showSummary"
-        v-show="data && data.length > 0"
         class="el-table__fixed-footer-wrapper"
         ref="fixedFooterWrapper">
         <table-footer
@@ -186,7 +184,6 @@
       </div>
       <div
         v-if="showSummary"
-        v-show="data && data.length > 0"
         class="el-table__fixed-footer-wrapper"
         ref="rightFixedFooterWrapper">
         <table-footer
